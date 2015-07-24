@@ -9,6 +9,12 @@ h1{
 	font-size: 50px;
 }
 
-div div:first-child {
 
+
+li > img:hover {
+	cursor: pointer;
+}
+.small-block-grid-3{
+	position: center;
+	
 }
