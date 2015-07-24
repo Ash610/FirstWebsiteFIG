@@ -1,18 +1,20 @@
-p{
+/*p{
 	position: left;
 	font-family: sans-serif;
 	font-size: 16px;
 	display: inline;
 	text-align: left;
 	color:red;
-}
+} */
 h1{
 	font-family: Impact;
 	font-size: 50px;
 	text-align: center;
 }
 
-
+.justified{
+	text-align: justify;
+}
 
 li > img:hover {
 	cursor: pointer;
