@@ -3,10 +3,13 @@ p{
 	font-family: sans-serif;
 	font-size: 16px;
 	display: inline;
+	text-align: left;
+	color:red;
 }
 h1{
 	font-family: Impact;
 	font-size: 50px;
+	text-align: center;
 }
 
 
@@ -17,4 +20,50 @@ li > img:hover {
 .small-block-grid-3{
 	position: center;
 	
+}
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 800px;
+	transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
+	z-index: -3;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
 }

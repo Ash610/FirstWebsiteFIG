@@ -3,42 +3,49 @@
 	<head>
 		<link rel="stylesheet" href="css/foundation.css" type="text/css" />
     <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <script src="js/modernizr.js" type="text/js"></script>
 		<title>FIG</title>
 	</head>
 	<body>
 
-    <div class="row" style="background-image: url('http://uicfig.com/wpimages/wp64286df3_06.png'); min-height: 283px; background-size: contain; background-repeat: no-repeat;">
+   <!-- <div class="row" style="background-image: url('http://uicfig.com/wpimages/wp64286df3_06.png'); min-height: 283px; background-size: contain; background-repeat: no-repeat;">
 
       <div class="small-12 columns">
 
       <div class="text-center" stlye="width: 200px; position: relative;">FIG</div>
        </div>
-    </div>
+    </div> -->
+
+  <div class="background-image toggle-image first-image show"></div>
+  <div class="background-image toggle-image second-image"></div>
+  <div class="background-image toggle-image third-image"></div>
 
 
 
-    <div class="row" data-magellan-expedition="fixed">
-      <img class="columns large-4 medium-4 small-4"src="http://uicfig.com/wpimages/wp2fd3e217_06.png" width="360" height="200" alt="Logo" />
-      <ul class="inline-list columns large-8 medium-8 small-8 right">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="officers.html">officers</a></li>
-        <li><a href="Contact Us.html">Contact us</a></li>
-        <li><a href="calender.html">Calender</a></li>
-        <li><a href="joinfIG.html">Join Fig</a></li>
-        <li><a href="PMT.html">PMT</a></li>
-      </ul>
-    </div>
+  <div class="row" data-magellan-expedition="fixed">
+    <img class="columns large-4 medium-4 small-4"src="http://uicfig.com/wpimages/wp2fd3e217_06.png" alt="Logo" />
+    <ul class="inline-list columns large-8 medium-8 small-8 right">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="officers.html">officers</a></li>
+      <li><a href="Contact Us.html">Contact us</a></li>
+      <li><a href="calender.html">Calender</a></li>
+      <li><a href="joinfIG.html">Join Fig</a></li>
+      <li><a href="PMT.html">PMT</a></li>
+    </ul>
+  </div> 
 
 
 
-    <h1 class="row" data-magellan-destination="arrival"><strong>About FIG</strong></h1>
+
+
+    <h1 class="row"  data-magellan-destination="arrival"><strong>About FIG</strong></h1>
     <div class="row">
       <div class="large-6 columns">
-      <p>  The Finance and Investment Group was founded in the Fall Semester of 2009 when the Collegiate Finance Organization and Investment Society merged together. The mission of Finance & Investment Group is to present dedicated finance students with career opportunities in the field of finance and to introduce them to professionals in the business community.  FIG also wants to increase their awareness of financial markets by providing students with valuable information, either through workshops or our Stock game competition.
+      <p class="intro">  The Finance and Investment Group was founded in the Fall Semester of 2009 when the Collegiate Finance Organization and Investment Society merged together. The mission of Finance & Investment Group is to present dedicated finance students with career opportunities in the field of finance and to introduce them to professionals in the business community.  FIG also wants to increase their awareness of financial markets by providing students with valuable information, either through workshops or our Stock game competition.
 
       We have stayed true to our mission for the past 6 years and grown into the largest student organization in the College of Business. </p>
       </div>
-      <iframe src="http://www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/uicfig&amp;width=288&amp;height=547&amp;header=true&amp;colorscheme=light&amp;show_border=true&amp;show_faces=true&amp;stream=true" class="OBJ-6" style="position:absolute;left:640px;width:288px;height:547px;"></iframe>
+      <iframe  src="http://www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/uicfig&amp;width=288&amp;height=547&amp;header=true&amp;colorscheme=light&amp;show_border=true&amp;show_faces=true&amp;stream=true" class="OBJ-6" style="position:absolute;left:640px;width:288px;height:547px;"></iframe>
     </div>
 
     <footer>
@@ -51,9 +58,11 @@
       $(document).foundation();
     </script> -->
 
-    <script src="js/modernizr.js" type="text/js"></script>
+    
+    <script src="js/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-      <script>
+    <script src="js/script.js"></script> 
+    <script>
       $(document).foundation();
     </script>
 	</body>
