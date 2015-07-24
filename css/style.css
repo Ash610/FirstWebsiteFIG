@@ -9,13 +9,7 @@ h1{
 	font-size: 50px;
 }
 
-div {
-    display: none;
-    border:1px solid #000;
-    height:230px;
-    width:800px;
-    margin-left:10px;
-}
+
 
 li > img:hover {
 	cursor: pointer;
