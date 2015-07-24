@@ -11,11 +11,21 @@ h1{
 	font-size: 50px;
 	text-align: center;
 }
+.intro{
+	text-align: center;
+	color: white;
+	margin:auto;
+}
 
 .justified{
 	text-align: justify;
 }
-
+.input{
+	position: center;
+}
+.sxiteenColumns{
+	position: center;
+}
 li > img:hover {
 	cursor: pointer;
 }
@@ -69,3 +79,7 @@ li > img:hover {
 .third-image.show {
 	opacity: 1;
 }
+
+/*
+style="position:absolute;left:640px;width:288px;height:547px;"
+*/
