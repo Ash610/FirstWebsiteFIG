@@ -6,9 +6,15 @@
 	text-align: left;
 	color:red;
 } */
+.section{
+	padding: 100px 0 100px 0;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    margin: auto;
+}
 h1{
-	font-family: sans-serif;
-	font-size: 75px;
 	text-align: center;
 }
 .intro{
@@ -33,9 +39,10 @@ p.intro{
 	font-size: 14px;
 
 }
-#contact_form{
-	background-color: red;
-
+#centered{
+	text-align: center;
+	margin-left: 300px;
+	margin-right: 100px;
 }
 .button{
 	align-items:center;
@@ -45,24 +52,27 @@ p.intro{
 	margin-right: 100px;
 	margin-left: 600px;
 }
+.middle{
+	text-align: center;
+}
+#middle{
+	margin-left: 200px;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.new{
+	margin-bottom: 200px;
+}
 
 /*officers page  */
 /*pics of officers */
-.small-block-grid-3 > li{
-    list-style: none;
-    display: block;
-    weight: 100px;
-    height:100px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    margin-top:5px;
-    margin-left: 5px;
-}
+.twelve.columns.offset-two.center{
+	width:680px;
+	margin-left:200px;
+	margin-right:600px;
+	padding-left: 120px;
 
-h3{
-	text-align: center;
-	font-family:serif;
-	font-size: 40px;
 }
 /*officers text */
 li > img:hover {
@@ -124,3 +134,4 @@ li > img:hover {
 /*
 style="position:absolute;left:640px;width:288px;height:547px;"
 */
+
