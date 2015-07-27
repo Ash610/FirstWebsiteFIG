@@ -29,60 +29,67 @@
 			FIG info session is on 1/29. Please come back and check the calendar for location details.
 			</p>
 		</div>
-		<form action="index.html">
-			<div class="large-4 columns">
-				<div>
-					<label for="fullName">Full Name</label>
-					<input type="text" id="fullName" placeholder="First Name" />
-				</div>
-				<div>
-					<label></label>
-					<input type="text" placeholder="Last Name" />
-				</div>
-				<div>
-					<label>UIC-Email</label>
-					<input type="text" placeholder="@uic.edu" />
-				</div>
-				<div>
-					<label>Major/Minor</label>
-				 	<input type="text" placeholder=" "/>
-				</div>
-				<div>
-					<label>Academic Year</label>
-				 	<input type="text" placeholder=" " />
-				</div>
-				<div>
-					<label>UIN</label>
-				 	<input type="text" placeholder=" "/>
-				</div>
-			</div>
-			<div class="row">
-	    		<div class="large-12 columns">
-	      			<label>Are you in FIN 300?</label>
-	       			<select>
-	          			<option value="Yes">Yes</option>
-	          			<option value="No">No</option>
-	        		</select>
-	    		</div>
-	  		</div>
-	  		<div class="row">
-	    		<div class="large-6 columns">
-	      			<label>Your application will not be complete unless you finish the payment method</label>
-	      			<input type="radio" name="pokemon" value="Red" id="pokemonRed">
-	      			<label for="pokemonRed">Membership $16.00 USD</label>
-	    		</div>
-	    	</div>
-			<div class="row">
-	    		<div class="large-12 columns">
-	      			<label>Signature and Date</label>
-	        		<textarea placeholder=""></textarea>
-	    		</div>
-	    	</div>
-	    	<!-- <button type="submit">Submit</button> -->
-	    	<a role="button" aria-label="submit form" href="#" class="button">Submit</a>
-	    	<a role=" button" aria-label="Clear form" href="#" class="button">Clear Form</a>
-	    	<a role="button" aria-label="Print" href="#" class="button">Print Form</a>
-		</form>
+		<form class="text-inline">
+        <div class="column large-6 medium-6" id="centered">
+          <div>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="First Name" />
+          </div>
+          <div>
+            <label></label>
+            <input type="text" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="column large-6 medium-6" id="centered">
+          <div>
+            <label>UIC-Email</label>
+            <input type="text" placeholder="@uic.edu" />
+          </div>
+        <div>
+          <label>Major/Minor</label>
+          <input type="text" placeholder=" "/>
+        </div>
+        <div>
+          <label>Academic Year</label>
+          <input type="text" placeholder=" " />
+        </div>
+        <div>
+          <label>UIN</label>
+          <input type="text" placeholder=" "/>
+        </div>
+        </div>
+        <div class="column large-6 medium-6" id="centered">
+        <div class="row">
+          <div class="column large-6 medium-6">
+              <label>Are you in FIN 300?</label>
+              <select>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns">
+              <label>Your application will not be complete unless you finish the payment method</label>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed">
+              <label for="pokemonRed">Membership $16.00 USD</label>
+          </div>
+        </div>
+      <div class="row">
+          <div class="large-12 columns">
+              <label>Signature and Date</label>
+              <textarea placeholder=""></textarea>
+          </div>
+        </div> 
+      </div>
+      
+<!-- <button type="submit">Submit</button> -->
+      <div class="row">
+        <a role="button" aria-label="submit form" href="#" class="button">Submit</a>
+        <a role="button" aria-label="Clear form" href="#" class="button">Clear Form</a>
+        <a role="button" aria-label="Print" href="#" class="button">Print Form</a>
+      </div>
+    </form>
 
 	<script src="js/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
