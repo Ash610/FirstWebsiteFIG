@@ -1,3 +1,4 @@
+THURSDAY:
 1) index.html between lines 85 and 95 
 2) "Contact Us" div tags open on line 21 and 22 are not closed? also, indentation.
 3) what is in OldFig.html?
@@ -9,3 +10,8 @@
         
     </p>
 </div>
+
+FRIDAY:
+1) I'm still seeing sloppy indentation -> this leads to problems with unclosed or not-matching tags
+2) for most of your pages -> img tag has height/width attributes, but also has column classes --> both of these things will attempt to control its appearance. which one gets priority?
+3) Please consider the files you're including and the order that they are loaded in.
