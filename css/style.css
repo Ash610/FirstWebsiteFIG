@@ -6,6 +6,11 @@
 	text-align: left;
 	color:red;
 } */
+.container{
+	position: relative;
+	width:960px;
+	padding:0;
+}
 .column .wide .has-divider{
 	padding:50px 0 20px 0;
 }
@@ -37,11 +42,14 @@
     margin: auto;
 
 }
+.t1{
+	word-wrap:break-word;
+}
 .content{
 	text-align: center;
 	display: block;
 	color: white;
-	font-size: 39px;
+	font-size: 20px;
 } 
 h1{
 	text-align: center;
