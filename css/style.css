@@ -1,20 +1,144 @@
-p{
+/*p{
 	position: left;
 	font-family: sans-serif;
 	font-size: 16px;
 	display: inline;
+	text-align: left;
+	color:red;
+} */
+.row.color{
+	background-color: rgba(32,32,32,.95);
+}
+.aligned{
+	font-size: 30px;
+	font-family: serif;
+}
+.section{
+	padding: 100px 0 100px 0;
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    margin: auto;
 }
 h1{
-	font-family: Impact;
-	font-size: 50px;
+	text-align: center;
+}
+.intro{
+	text-align: center;
+	color: white;
+	margin:auto;
+}
+/*pmt text */
+.justified{
+	text-align: justify;
+}
+.input{
+	position: center;
+}
+.sxiteenColumns{
+	position: center;
 }
 
+p.intro{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 14px;
 
+}
+#centered{
+	text-align: center;
+	margin-left: 300px;
+	margin-right: 100px;
+}
+.button{
+	align-items:center;
+}
+.button_4{
+	text-align: center;
+	margin-right: 100px;
+	margin-left: 600px;
+}
+.middle{
+	text-align: center;
+}
+#middle{
+	margin-left: 200px;
+	margin-right: 100px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.new{
+	margin-bottom: 200px;
+}
 
+/*officers page  */
+/*pics of officers */
+.twelve.columns.offset-two.center{
+	width:680px;
+	margin-left:200px;
+	margin-right:600px;
+	padding-left: 120px;
+
+}
+/*officers text */
 li > img:hover {
 	cursor: pointer;
 }
-.small-block-grid-3{
-	position: center;
-	
+
+/*backgroung*/
+.background-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 2000px 500px;
 }
+
+/* Styles for the alternating / transition effect. */
+.toggle-image {
+ 	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+ 	height: 800px;
+	transition: opacity 1s ease-in-out;
+}
+
+/* Styles for the specific images. */
+.first-image {
+	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
+	z-index: -3;
+	opacity: 0;
+}
+
+.second-image {
+	background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
+	z-index: -2;
+	opacity: 0;
+}
+
+.third-image {
+	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
+	z-index: -1;
+	opacity: 0;
+}
+
+.first-image.show {
+	opacity: 1;
+}
+
+.second-image.show {
+	opacity: 1;
+}
+
+.third-image.show {
+	opacity: 1;
+}
+/*footer */
+.site-wrapper{
+	text-align: center;
+	background-color: blue;
+}
+/*
+style="position:absolute;left:640px;width:288px;height:547px;"
+*/
+

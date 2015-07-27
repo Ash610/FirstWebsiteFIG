@@ -6,8 +6,9 @@
     	<title>Contact Us</title>
     </head>
     <body>
+ <!--navigation -->
     	 <section class="row">
-      		<img class="columns large-4 medium-4 small-4"src="http://uicfig.com/wpimages/wp2fd3e217_06.png" width="360" height="200" alt="Logo" />
+      		<img class="columns large-4 medium-4 small-4" src="http://uicfig.com/wpimages/wp2fd3e217_06.png" alt="Logo" />
       		<ul class="inline-list columns large-8 medium-8 small-8 right">
        			<li><a href="index.html">Home</a></li>
         		<li><a href="officers.html">officers</a></li>
@@ -17,20 +18,18 @@
         		<li><a href="PMT.html">PMT</a></li>
       		</ul>
     	</section>
+<!--contact info -->
     	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
 		<div class="row">
-		<div class="large-4 columns">
+		<div class="twelve columns offset-two center">
 			<div>
 				<label for="fullName">Full Name</label>
 				<input type="text" id="fullName" placeholder="First Name" />
 			</div>
-			<div>
+			<div >
 				<label></label>
 				<input type="text" placeholder="Last Name" />
 			</div>
-			<!-- <label for="name">Your name:</label><br />
-			<input id="name" class="input" name="name" type="text" value="" size="15" /><br /> -->
-		<!-- <div class="row"> -->
 			<div>
 				<label for="email">Your email:</label><br />
 				<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
@@ -44,12 +43,14 @@
 		</div>
 		</div>
 		<input id="submit_button" type="submit" value="Send email" />
-		<!-- </div> -->
-		</form>	
-		  <script src="js/jquery.js"></script>
-  <script src="js/foundation.min.js"></script>
-  <script>
-      $(document).foundation();
-    </script>					
 
-    </body>
+		</form>	
+
+		<script src="js/jquery.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>					
+
+	</body>
+</html>
