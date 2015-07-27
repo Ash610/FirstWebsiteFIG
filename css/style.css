@@ -6,6 +6,13 @@
 	text-align: left;
 	color:red;
 } */
+.row.color{
+	background-color: rgba(32,32,32,.95);
+}
+.aligned{
+	font-size: 30px;
+	font-family: serif;
+}
 .section{
 	padding: 100px 0 100px 0;
     padding-top: 50px;
