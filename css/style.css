@@ -1,131 +1,25 @@
-/*p{
-	position: left;
-	font-family: sans-serif;
-	font-size: 16px;
-	display: inline;
-	text-align: left;
-	color:red;
-} */
-.container{
-	position: relative;
-	width:960px;
-	padding:0;
-}
-.column .wide .has-divider{
-	padding:50px 0 20px 0;
-}
-.section{
-	height:200px;
-	width: 450px;
-}
-.row.color{
-	background-color: rgba(32,32,32,.95);
-}
-.aligned{
-	font-size: 30px;
-	font-family: serif;
-}
-.section{
-	padding: 100px 0 100px 0;
-    padding-top: 50px;
-    padding-right: 0px;
-    padding-bottom: 50px;
-    padding-left: 0px;
-    margin: auto;
-}
-.section1{
-	padding:100px 0 100px 0;
-	padding-top: 100px;
-    padding-right: 0px;
-    padding-bottom: 100px;
-    padding-left: 0px;
-    margin: auto;
-
-}
-.t1{
-	word-wrap:break-word;
-}
-.content{
-	text-align: center;
-	display: block;
-	color: white;
-	font-size: 20px;
-} 
 h1{
 	text-align: center;
 	font-family: cursive;
 	font-size: 80px;
 }
-.intro{
-	text-align: center;
-	color: white;
-	margin:auto;
+/*links*/
+.aligned{
+	font-size: 30px;
+	font-family: serif;
 }
-/*pmt text */
-.justified{
-	text-align: justify;
+/*nav bar */
+.row.color{
+	background-color: rgba(32,32,32,.95);
 }
-.input{
-	position: center;
-}
-.sxiteenColumns{
-	position: center;
-}
-
-p.intro{
-	text-align: center;
-	font-family: sans-serif;
-	font-size: 14px;
-
-}
-#centered{
-	text-align: center;
-	margin-left: 300px;
-	margin-right: 100px;
-}
-.button{
-	align-items:center;
-}
-.button_4{
-	text-align: center;
-	margin-right: 100px;
-	margin-left: 600px;
-}
-.middle{
-	text-align: center;
-}
-#middle{
-	margin-left: 200px;
-	margin-right: 100px;
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-.new{
-	margin-bottom: 200px;
-}
-
-/*officers page  */
-/*pics of officers */
-.twelve.columns.offset-two.center{
-	width:680px;
-	margin-left:200px;
-	margin-right:600px;
-	padding-left: 120px;
-
-}
-/*officers text */
-li > img:hover {
-	cursor: pointer;
-}
-
-/*backgroung*/
+/*coverpage*/
+	/*backgroung*/
 .background-image {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-/* Styles for the alternating / transition effect. */
+	/* Styles for the alternating / transition effect. */
 .toggle-image {
  	position: absolute;
 	width: 100%;
@@ -135,7 +29,7 @@ li > img:hover {
 	transition: opacity 1s ease-in-out;
 }
 
-/* Styles for the specific images. */
+	/* Styles for the specific images. */
 .first-image {
 	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
 	z-index: -3;
@@ -165,13 +59,74 @@ li > img:hover {
 .third-image.show {
 	opacity: 1;
 }
-/*footer */
-.site-wrapper{
+/*intro to fig */
+.row.content{
 	text-align: center;
-	background-color: blue;
-	display:block;
+	color:white;
+	font-size: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-top: 30px;
 }
+ 
+/*PMT*/
+.intro{
+	text-align: center;
+	color: white;
+	margin:auto;
+}
+	/*pmt text */
+.justified{
+	text-align: justify;
+}
+/*calender*/
+.row.pt{
+	padding-top: 50px;
+}
+/*Join fig */
+.row.clicks{
+	padding-left: 300px;
+	padding-top: 30px;
+}
+h2{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+}
+/*officers*/
+.small-block-grid-3{
+	padding-top: 50px;
+	width: auto;
+}
+
+/*officers page  */
+	/*officers text */
+li > img:hover {
+	cursor: pointer;
+}
+	/*pics of officers */
+.officers {
+	max-width: 680px;
+	width: 80%;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*.centered-content {
+	display: block;
+	text-align: center;
+}*/
+/*contact*/
 /*
-style="position:absolute;left:640px;width:288px;height:547px;"
-*/
+.button_4{
+	text-align: center;
+	margin-right: 1000px;
+	margin-left: 142px;
+}
+#contact_form{
+	text-align: center;
+	margin-left: 500px;
+}*/
+
+/*footer */
+
 
