@@ -78,14 +78,19 @@ h1{
 .justified{
 	text-align: justify;
 }
+.justified.bc{
+	padding-bottom: 50px;
+}
 /*calender*/
 .row.pt{
 	padding-top: 50px;
+	padding-bottom: 70px;
 }
 /*Join fig */
 .row.clicks{
 	padding-left: 300px;
 	padding-top: 30px;
+	padding-bottom: 60px;
 }
 h2{
 	text-align: center;
@@ -94,6 +99,7 @@ h2{
 /*officers*/
 .small-block-grid-3{
 	padding-top: 50px;
+	padding-bottom: 50px;
 	width: auto;
 }
 
@@ -116,6 +122,10 @@ li > img:hover {
 	text-align: center;
 }*/
 /*contact*/
+.row.bc{
+	padding-bottom: 60px;
+
+}
 /*
 .button_4{
 	text-align: center;
@@ -127,7 +137,6 @@ li > img:hover {
 	margin-left: 500px;
 }*/
 
-/*footer */
 /*footer */
 
 
