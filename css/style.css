@@ -31,7 +31,7 @@ h1{
 
 	/* Styles for the specific images. */
 .first-image {
-	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
+	background-image: url('http://uicfig.com/wpimages/wpfc6150f5_06.png');	
 	z-index: -3;
 	opacity: 0;
 }
@@ -62,7 +62,7 @@ h1{
 /*intro to fig */
 .row.content{
 	text-align: center;
-	color:white;
+	color:black;
 	font-size: 20px;
 	font-family: 'Josefin Sans', sans-serif;
 	padding-top: 30px;
@@ -138,35 +138,30 @@ li > img:hover {
 }*/
 
 /*footer */
-
+#homepage{
+	min-height: 800px;
+}
 
 body {
   height: auto;
 }
 
 #footer {
-		position:fixed;
-		bottom:0;
+		position:absolute;
+
 		z-index:999999;
 		background-color: #F0F8FF;
 		height:50px;
 		font-size: 16px;
 		color:blue;
+		width: 100%;
 	}
-.wrap {
-		position:relative;
-		margin:0 auto;
-               /*replace 900px with your width*/
-		width:900px;
-		color:blue;
 
-	}
-#header, #footer {
-		width:100%;
-		float:left;
-	}
+#homepage #footer{
+	bottom: 0px;
+}
 /*parallex css */
-body, html {
+/*body, html {
   height : 100%;
   
   font-family : sans-serif;
@@ -278,5 +273,8 @@ a {
   &, &:visited, &:active {
     color : #f66;
   }
+}*/
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
-
