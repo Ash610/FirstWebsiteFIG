@@ -22,3 +22,6 @@ $(function () {
 });
 
 $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+
+ var height = $(window).height();
+$('.parallax').css('min-height', height);
