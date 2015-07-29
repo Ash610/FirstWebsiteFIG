@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/foundation.css" type="text/css" />
+    	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    	<title>Contact Us</title>
+    </head>
+    <body>
+ <!--navigation -->
+        <div class="row color"data-magellan-expedition="fixed">
+      		<img class="columns large-4 medium-4" src="http://uicfig.com/wpimages/wp2fd3e217_06.png" alt="Logo" />
+      		<ul class="inline-list columns large-8 medium-8 right">
+       			<li class="aligned"><a href="index.html">Home</a></li>
+            <li class="aligned"><a href="PMT.html">PMT</a></li>
+            <li class="aligned"><a href="calendar.html">Calender</a></li>
+            <li class="aligned"><a href="joinFIG.html">Join Fig</a></li>
+            <li class="aligned"><a href="officers.html">Officers</a></li>
+            <li class="aligned"><a href="contact_us.html">Contact us</a></li> 
+      		</ul>
+        </div>
+
+<!--contact info -->
+    	<h1>Contact Us</h1>
+          <form class="text-inline"id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <div class="large-4 columns" id="centered">
+           		 <div>
+              		<label for="fullName">Full Name</label>
+              		<input type="text" id="fullName" placeholder="First Name" />
+            	 </div>
+            	 <div>
+              		<label></label>
+              		<input type="text" placeholder="Last Name" />
+            	 </div>
+            	 <div>
+              		<label for="email">Your email:</label><br />
+              		<input id="email" class="input" name="email" type="text" value="" /><br />
+            	 </div>
+            	 <div>
+              		<label for="message">Your message:</label><br />
+              		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+            	 </div>
+           	  </div>
+            </div>
+            <div class="row bc">
+          	 <a role="button" aria-label="submit form" href="#" class="button">Send Mail</a>
+            </div>
+          </form> 
+
+<div id="footer">
+    <div class="wrap">
+      <p>Copyright - FIG 2014</p>
+    </div>
+  </div>
+
+
+		<script src="js/jquery.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>					
+
+	</body>
+</html>
