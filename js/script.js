@@ -25,3 +25,12 @@ $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 
  var height = $(window).height();
 $('.parallax').css('min-height', height);
+
+function sendMail () {
+  var email = $("#emailInput").val();
+  if (email) {
+    alert("your email is " + email +".");
+  } else {
+    alert("You didn't give me an email.");
+  }
+}
