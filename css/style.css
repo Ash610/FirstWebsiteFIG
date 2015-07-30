@@ -111,13 +111,6 @@ body {
 		width: 100%;
 	}
 
-
-  
-
-  
-
-
-
 /*.parallax-window {
     min-height: 400px;
     background: transparent;
@@ -148,3 +141,9 @@ section.module.parallax-1 {
     font-size: 160px;
   }*/
 
+.divider {
+  display: block;
+  width: 100%;
+  height: 0px;
+  border-bottom: 5px solid black;
+}
