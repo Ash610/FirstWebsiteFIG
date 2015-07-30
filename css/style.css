@@ -1,155 +1,157 @@
 h1{
-	text-align: center;
-	font-family: cursive;
-	font-size: 80px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 80px;
 }
 /*links*/
 .aligned{
-	font-size: 30px;
-	font-family: serif;
+  font-size: 30px;
+  font-family: serif;
 }
 /*nav bar */
 .row.color{
-	background-color: rgba(32,32,32,.95);
-}
-/*coverpage*/
-	/*backgroung*/
-.background-image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-	/* Styles for the alternating / transition effect. */
-.toggle-image {
- 	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
- 	height: 800px;
-	transition: opacity 1s ease-in-out;
+  background-color: rgba(32,32,32,.95);
 }
 
-	/* Styles for the specific images. */
-.first-image {
-	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
-	z-index: -3;
-	opacity: 0;
-}
-
-.second-image {
-	background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
-	z-index: -2;
-	opacity: 0;
-}
-
-.third-image {
-	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
-	z-index: -1;
-	opacity: 0;
-}
-
-.first-image.show {
-	opacity: 1;
-}
-
-.second-image.show {
-	opacity: 1;
-}
-
-.third-image.show {
-	opacity: 1;
-}
 /*intro to fig */
 .row.content{
-	text-align: center;
-	color:white;
-	font-size: 20px;
-	font-family: 'Josefin Sans', sans-serif;
-	padding-top: 30px;
+  text-align: center;
+  color:red;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 30px;
 }
  
 /*PMT*/
 .intro{
-	text-align: center;
-	color: white;
-	margin:auto;
+  text-align: center;
+  color: white;
+  margin:auto;
 }
-	/*pmt text */
+  /*pmt text */
 .justified{
-	text-align: justify;
+  text-align: justify;
 }
 .justified.bc{
-	padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 /*calender*/
 .row.pt{
-	padding-top: 50px;
-	padding-bottom: 70px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 /*Join fig */
-.row.clicks{
-	padding-left: 300px;
-	padding-top: 30px;
-	padding-bottom: 60px;
-}
+/*.row.clicks{
+  padding-left: 300px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}*/
 h2{
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 /*officers*/
 .small-block-grid-3{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	width: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: auto;
 }
 
 /*officers page  */
-	/*officers text */
+  /*officers text */
 li > img:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
-	/*pics of officers */
+  /*pics of officers */
 .officers {
-	max-width: 680px;
-	width: 80%;
+  max-width: 680px;
+  width: 80%;
 
-	margin-right: auto;
-	margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*.centered-content {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 }*/
 /*contact*/
 .row.bc{
-	padding-bottom: 60px;
+  padding-bottom: 60px;
 
 }
 /*
 .button_4{
-	text-align: center;
-	margin-right: 1000px;
-	margin-left: 142px;
+  text-align: center;
+  margin-right: 1000px;
+  margin-left: 142px;
 }
 #contact_form{
-	text-align: center;
-	margin-left: 500px;
+  text-align: center;
+  margin-left: 500px;
 }*/
 
 /*footer */
-
+#homepage{
+  min-height: 800px;
+}
 
 body {
   height: auto;
 }
 
 #footer {
-		position:fixed;
-		bottom:0;
-		z-index:999999;
-		background-color: #F0F8FF;
-		height:50px;
+    position:absolute;
+
+    z-index:999999;
+    background-color: #F0F8FF;
+    height:50px;
+    font-size: 16px;
+    color:blue;
+    width: 100%;
+  }
+
+/*.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}*/
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax-1{
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-1 {
+  background-image: url("http://uicfig.com/wpimages/wpa4dd56fe_06.png");
+}
+/*@media all and (min-width: 600px) {
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }*/
+
+.divider {
+  display: block;
+  width: 100%;
+  height: 0px;
+  border-bottom: 5px solid black;
+}
+
+.center {
+  text-align: center;
+}
+ight:50px;
 		font-size: 16px;
 		color:blue;
 	}
