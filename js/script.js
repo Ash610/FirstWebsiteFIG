@@ -21,10 +21,10 @@ $(function () {
     cycleBackgrounds();
 });
 
-$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+//$('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 
- var height = $(window).height();
-$('.parallax').css('min-height', height);
+ //var height = $(window).height();
+//$('.parallax').css('min-height', height);
 
 function sendMail () {
   var email = $("#emailInput").val();
