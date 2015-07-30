@@ -41,11 +41,11 @@ h1{
 	padding-bottom: 70px;
 }
 /*Join fig */
-.row.clicks{
+/*.row.clicks{
 	padding-left: 300px;
 	padding-top: 30px;
 	padding-bottom: 60px;
-}
+}*/
 h2{
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
@@ -146,4 +146,8 @@ section.module.parallax-1 {
   width: 100%;
   height: 0px;
   border-bottom: 5px solid black;
+}
+
+.center {
+  text-align: center;
 }
