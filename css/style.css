@@ -12,57 +12,11 @@ h1{
 .row.color{
 	background-color: rgba(32,32,32,.95);
 }
-/*coverpage*/
-	/*backgroung*/
-.background-image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-	/* Styles for the alternating / transition effect. */
-.toggle-image {
- 	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
- 	height: 800px;
-	transition: opacity 1s ease-in-out;
-}
 
-	/* Styles for the specific images. */
-.first-image {
-	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');	
-	z-index: -3;
-	opacity: 0;
-}
-
-.second-image {
-	background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
-	z-index: -2;
-	opacity: 0;
-}
-
-.third-image {
-	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
-	z-index: -1;
-	opacity: 0;
-}
-
-.first-image.show {
-	opacity: 1;
-}
-
-.second-image.show {
-	opacity: 1;
-}
-
-.third-image.show {
-	opacity: 1;
-}
 /*intro to fig */
 .row.content{
 	text-align: center;
-	color:white;
+	color:red;
 	font-size: 20px;
 	font-family: 'Josefin Sans', sans-serif;
 	padding-top: 30px;
@@ -138,31 +92,59 @@ li > img:hover {
 }*/
 
 /*footer */
-
+#homepage{
+	min-height: 800px;
+}
 
 body {
   height: auto;
 }
 
 #footer {
-		position:fixed;
-		bottom:0;
+		position:absolute;
+
 		z-index:999999;
 		background-color: #F0F8FF;
 		height:50px;
 		font-size: 16px;
 		color:blue;
+		width: 100%;
 	}
-.wrap {
-		position:relative;
-		margin:0 auto;
-               /*replace 900px with your width*/
-		width:900px;
-		color:blue;
 
-	}
-#header, #footer {
-		width:100%;
-		float:left;
-	}
+
+  
+
+  
+
+
+
+/*.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}*/
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax-1{
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax-1 {
+  background-image: url("http://uicfig.com/wpimages/wpa4dd56fe_06.png");
+}
+/*@media all and (min-width: 600px) {
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }*/
 
