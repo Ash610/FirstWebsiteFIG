@@ -51,32 +51,47 @@
 //     alert(error.message);
 //   });
 // }
-function submitEmail () {
-   var email = $("#emailInput").val();
-   $.ajax({
-     type:"POST",
-     url: "http://localhost:3000/join",
-     data: { email: email },
-     success: function (data) { console.log(data); alert('Success'); }
-   });
- }
+// function submitEmail () {
+//    var email = $("#emailInput").val();
+//    $.ajax({
+//      type:"POST",
+//      url: "http://localhost:3000/join",
+//      data: { 
+//      	email: email 
+//      },
+//      success: function (data) {  
+//      	alert('Success'); 
+//      },
+//    });
+//    	$("#emailInput").val("");
+//  	}else{
+//  	alert("Please provide a name and valid email address!");
+//  	}
+//  }
+var url = "http://abhilashakonduru.azurewebsites.net/";
  function submitEmail () {
- 	var email = $('#emailInput').val();
- 	if (isValidEmailAddress(email)){
+ 	var email = $("#emailInput").val();
+ 	var name = $("#nameInput").val();
+ 	if (name && isValidEmailAddress(email)){
  		$.ajax({
  			type:"POST",
- 			url:"http://localhost:3000/join",
- 			data:{email: email },
- 			success: function (data) { console.log(data);alert("Success");},
+ 			url: url + "join",
+ 			data:{
+ 				name: name,
+ 				email: email 
+ 			},
+ 			success: function (data) { 
+ 				alert("Success");
+ 			},
  			error: function(error){
  				var code = error.status;
  				switch (code) {
  					case 500:
  						alert("Something went wrong!");
- 					break;
- 					case 400;
+ 						break;
+ 					case 400:
  						alert("Bad Email Address!");
- 					break;
+ 						break;
  					case 409:
  						alert("Email already on the list!");
  					break;
@@ -86,6 +101,7 @@ function submitEmail () {
  			}
  		});
  		$("#emailInput").val("");
+ 		$("#nameInput").val("");
  	}else{
  		alert("That's not a valid email address!");
  	}
