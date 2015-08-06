@@ -68,7 +68,7 @@
 //  	alert("Please provide a name and valid email address!");
 //  	}
 //  }
-var url = "http://localhost:3000/";
+var url = "http://abhilashakonduru.azurewebsites.net/";
  function submitEmail () {
  	var firstName = $("#firstNameInput").val();
  	var lastName = $("#lastNameInput").val();
