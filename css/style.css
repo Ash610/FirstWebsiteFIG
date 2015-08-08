@@ -145,16 +145,13 @@ section.module.parallax-1 {
   display: block;
   width: 100%;
   height: 0px;
-  border-bottom: 5px solid black;
+  border-bottom: 2px solid black;
 }
 
 .center {
   text-align: center;
 }
-ight:50px;
-		font-size: 16px;
-		color:blue;
-	}
+
 .wrap {
 		position:relative;
 		margin:0 auto;

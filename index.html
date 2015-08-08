@@ -95,7 +95,7 @@
         <p>
           FIG info session is on 1/29. Please come back and check the calendar for location details.
         </p>
-        <form class="text-inline parallax">
+        <form class="text-inline">
           <div class="row">
             <div class="column large-6 medium-6" id="centered">
               <div>
@@ -191,10 +191,6 @@
                 <input type="text" id="firstNameInput" placeholder="First Name" />
                 <input type="text" placeholder="Last Name" id="lastNameInput" />
               </div>
-              <!-- <div>
-                <label></label>
-                
-              </div> -->
               <div>
                 <label for="email">Your email:</label><br />
                 <input id="emailInput" class="input" name="email" type="text" value="" /><br />
@@ -204,8 +200,9 @@
                 <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
               </div>
             </div>
-            <button  onclick="submitEmail()">Submit</button>
-          </div>
+            <div class="clicks center">
+              <a role="button" aria-label="submit form" href="#" class="button">Submit</a>
+            </div>
         </div>
       </div> 
     </main>
@@ -217,7 +214,7 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-      // $(document).foundation();
+       // $(document).foundation();
     </script>
   </body>
 </html>
