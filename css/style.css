@@ -1,7 +1,15 @@
+
 h1{
   text-align: center;
-  font-family: cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 80px;
+  color:blue;
+  margin-top: 40px;
+
+}
+img{
+  width: 100px;
+  height:100px;
 }
 /*links*/
 .aligned{
@@ -10,17 +18,17 @@ h1{
 }
 /*nav bar */
 .row.color{
-  background-color: rgba(32,32,32,.95);
+  background-color: black;
 }
 
 /*intro to fig */
-.row.content{
+/*.row.content{
   text-align: center;
-  color:red;
+  color:purple;
   font-size: 20px;
   font-family: 'Josefin Sans', sans-serif;
   padding-top: 30px;
-}
+}*/
  
 /*PMT*/
 .intro{
@@ -41,14 +49,10 @@ h1{
   padding-bottom: 70px;
 }
 /*Join fig */
-/*.row.clicks{
-  padding-left: 300px;
-  padding-top: 30px;
-  padding-bottom: 60px;
-}*/
 h2{
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
+  color:white;
 }
 /*officers*/
 .small-block-grid-3{
@@ -71,25 +75,17 @@ li > img:hover {
   margin-left: auto;
 }
 
-/*.centered-content {
-  display: block;
-  text-align: center;
-}*/
+
+
 /*contact*/
 .row.bc{
   padding-bottom: 60px;
 
 }
-/*
-.button_4{
+#clicks #center{
   text-align: center;
-  margin-right: 1000px;
-  margin-left: 142px;
 }
-#contact_form{
-  text-align: center;
-  margin-left: 500px;
-}*/
+
 
 /*footer */
 #homepage{
@@ -111,35 +107,6 @@ body {
     width: 100%;
   }
 
-/*.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}*/
-.container{
-  max-width: 960px;
-  margin: 0 auto;
-}
-section.module.content {
-  padding: 40px 0;
-}
-section.module.parallax-1{
-  height: 600px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-section.module.parallax-1 {
-  background-image: url("http://uicfig.com/wpimages/wpa4dd56fe_06.png");
-}
-/*@media all and (min-width: 600px) {
-  section.module.parallax h1 {
-    font-size: 96px;
-  }
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-  }*/
 
 .divider {
   display: block;
@@ -153,15 +120,25 @@ section.module.parallax-1 {
 }
 
 .wrap {
-		position:relative;
-		margin:0 auto;
+    position:relative;
+    margin:0 auto;
                /*replace 900px with your width*/
-		width:900px;
-		color:blue;
+    width:900px;
+    color:blue;
 
-	}
+  }
 #header, #footer {
-		width:100%;
-		float:left;
-	}
-
+    width:100%;
+    float:left;
+  }
+body{
+  background-color: black;
+}
+ p{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#footer p{
+  color:black;
+  text-align: center;
+}
