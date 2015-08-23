@@ -20,16 +20,17 @@ img{
 .row.color{
   background-color: black;
 }
-
-/*intro to fig */
-/*.row.content{
+#background{
+  background: url("http://www.uicfig.com/wpimages/wp64286df3_06.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   text-align: center;
-  color:purple;
-  font-size: 20px;
-  font-family: 'Josefin Sans', sans-serif;
-  padding-top: 30px;
-}*/
- 
+  
+}
+/*intro to fig */
+
 /*PMT*/
 .intro{
   text-align: center;
