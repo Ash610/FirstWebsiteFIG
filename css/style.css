@@ -1,145 +1,84 @@
+li{
+    display: inline-block;
+    padding: 0px 35px 0px 35px;
+    height: 25px;
 
+}
+.aligned{
+  padding: 0px 20px;
+
+}
+ul{
+/*    background: black;
+    display: inline-block;
+    border-radius: 7px;
+    width: 100%;
+    height: 28px;
+    position: relative;
+    left: 100%;*/
+  text-align: right;
+
+}
+#nav_bar{
+  padding: 10px 0px;
+  background-color: MediumSeaGreen;
+  z-index: 10;
+}
+body{
+    margin: 0px;
+
+/*    width: 100%;
+*/
+}
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+.container{
+  margin: 0px;
+  top: 0;
+  position: relative;
+}
 h1{
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 80px;
   color:blue;
-  margin-top: 40px;
+  margin: 0px;
 
 }
-img{
-  width: 100px;
-  height:100px;
-}
-/*links*/
-.aligned{
+h4{
+  text-align: left;
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 30px;
-  font-family: serif;
-}
-/*nav bar */
-.row.color{
-  background-color: black;
-}
-#background{
-  background: url("http://www.uicfig.com/wpimages/wp64286df3_06.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  text-align: center;
-  
-}
-/*intro to fig */
-
-/*PMT*/
-.intro{
-  text-align: center;
-  color: white;
-  margin:auto;
-}
-  /*pmt text */
-.justified{
-  text-align: justify;
-}
-.justified.bc{
-  padding-bottom: 50px;
-}
-/*calender*/
-.row.pt{
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-/*Join fig */
-h2{
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  color:white;
-}
-/*officers*/
-.small-block-grid-3{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  width: auto;
-}
-
-/*officers page  */
-  /*officers text */
-li > img:hover {
-  cursor: pointer;
-}
-  /*pics of officers */
-.officers {
-  max-width: 680px;
-  width: 80%;
-
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-
-/*contact*/
-.row.bc{
-  padding-bottom: 60px;
+  color:PapayaWhip;
+  /*margin-top: 40px;*/
+  margin: 0px;
+  position: absolute;
+  padding-left: 10px;
 
 }
-#clicks #center{
-  text-align: center;
-}
-
-
-/*footer */
-#homepage{
-  min-height: 800px;
-}
-
-body {
-  height: auto;
-}
-
-#footer {
-    position:absolute;
-
-    z-index:999999;
-    background-color: #F0F8FF;
-    height:50px;
-    font-size: 16px;
-    color:blue;
-    width: 100%;
-  }
-
-
-.divider {
-  display: block;
-  width: 100%;
-  height: 0px;
-  border-bottom: 2px solid black;
-}
-
-.center {
-  text-align: center;
-}
-
-.wrap {
-    position:relative;
-    margin:0 auto;
-               /*replace 900px with your width*/
-    width:900px;
-    color:blue;
-
-  }
-#header, #footer {
-    width:100%;
-    float:left;
-  }
-body{
-  background-color: black;
-}
- p{
-  color: white;
-  font-family: 'Josefin Sans', sans-serif;
-}
-#footer p{
-  color:black;
-  text-align: center;
-}
+    #scroller {
+        position: relative;
+    }
+    #scroller .innerScrollArea {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #scroller ul {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    #scroller li {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        position: absolute;
+    }

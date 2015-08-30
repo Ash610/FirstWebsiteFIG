@@ -1,73 +1,54 @@
-// Document Ready.
-//   function cycleBackgrounds() {
-//   var index = 0;
+$(document).ready(function() {
 
-//   $imageEls = $('.toggle-image'); // Get the images to be cycled.
+  $(window).scroll(function () {
+    $('#nav_bar').addClass('navbar-fixed');
+  });
+});
 
-//   setInterval(function () {
-//     // Get the next index.  If at end, restart to the beginning.
-//     index = index + 1 < 
-//     $imageEls.length ? index + 1 : 0;
-//     // Show the next image.
-//     $imageEls.eq(index).addClass('show');
-//     // Hide the previous image.
-//     $imageEls.eq(index - 1).removeClass('show');
+ $(function(){
+        var scroller = $('#scroller div.innerScrollArea');
+        var scrollerContent = scroller.children('ul');
+        scrollerContent.children().clone().appendTo(scrollerContent);
+        var curX = 0;
+        scrollerContent.children().each(function(){
+            var $this = $(this);
+            $this.css('left', curX);
+            curX += $this.outerWidth(true);
+        });
+        var fullW = curX / 2;
+        var viewportW = scroller.width();
+        scroller.css('overflow-x', 'auto');
 
-//   }, 2000);
-// };
+        // Scrolling speed management
+        var controller = {curSpeed:0, fullSpeed:2};
+        var $controller = $(controller);
+        var tweenToNewSpeed = function(newSpeed, duration)
+        {
+            if (duration === undefined)
+                duration = 600;
+            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+        };
 
-// // Document Ready.
-// $(function () {
-//     cycleBackgrounds();
-// });
+        // Pause on hover
+        scroller.hover(function(){
+            tweenToNewSpeed(0);
+        }, function(){
+            tweenToNewSpeed(controller.fullSpeed);
+        });
 
+        // Scrolling management; start the automatical scrolling
+        var doScroll = function()
+        {
+            var curX = scroller.scrollLeft();
+            var newX = curX + controller.curSpeed;
+            if (newX > fullW*2 - viewportW)
+                newX -= fullW;
+            scroller.scrollLeft(newX);
+        };
+        setInterval(doScroll, 20);
+        tweenToNewSpeed(controller.fullSpeed);
+    });
 
-// function makeAjaxCall (){
-//   //make the request!
-//   $.ajax({
-//     url:"http://347e6913.ngrok.com/test"
-//   })
-//   //what to do when you get an message!
-//   .done(function (data) {
-//     alert(data.message);
-//   })
-//   //what to do when you get an error!
-//   .error(function (error) {
-//     alert(error.message);
-//   });
-// }
-// function makeAjaxCall () {
-//   var data = $("#emailInput").val();
-//   $.ajax({
-//     url:"http://347e6913.ngrok.com/test",
-//     method:"POST",
-//     dataType: "json",
-//     data: { message: data }
-//   })
-//   .done(function (data) {
-//     alert(data.message);
-//   })
-//   .error(function (error) {
-//     alert(error.message);
-//   });
-// }
-// function submitEmail () {
-//    var email = $("#emailInput").val();
-//    $.ajax({
-//      type:"POST",
-//      url: "http://localhost:3000/join",
-//      data: { 
-//      	email: email 
-//      },
-//      success: function (data) {  
-//      	alert('Success'); 
-//      },
-//    });
-//    	$("#emailInput").val("");
-//  	}else{
-//  	alert("Please provide a name and valid email address!");
-//  	}
-//  }
 var url = "http://abhilashakonduru.azurewebsites.net/";
  function submitEmail () {
  	var firstName = $("#firstNameInput").val();
