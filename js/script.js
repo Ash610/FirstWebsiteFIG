@@ -1,8 +1,27 @@
 $(document).ready(function() {
 
-  $(window).scroll(function () {
-    $('#nav_bar').addClass('navbar-fixed');
-  });
+    // grab the initial top offset of the navigation 
+    var nav_bar_offset_top = $('#nav_bar').offset().top;
+    
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var nav_bar = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top, otherwise change it back to relative
+        if (scroll_top > nav_bar_offset_top) { 
+            $('#nav_bar').css({ 'position': 'fixed', 'top':0, 'left':0, 'marging':'0px','width': '100%' });
+        } else {
+            $('#nav_bar').css({ 'position': 'relative' }); 
+        }   
+    };
+    
+    // run our function on load
+    nav_bar();
+    
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         nav_bar();
+    });
+    
 });
 
  $(function(){
@@ -25,7 +44,7 @@ $(document).ready(function() {
         var tweenToNewSpeed = function(newSpeed, duration)
         {
             if (duration === undefined)
-                duration = 600;
+                duration = 1000;
             $controller.stop(true).animate({curSpeed:newSpeed}, duration);
         };
 
@@ -48,54 +67,3 @@ $(document).ready(function() {
         setInterval(doScroll, 20);
         tweenToNewSpeed(controller.fullSpeed);
     });
-
-var url = "http://abhilashakonduru.azurewebsites.net/";
- function submitEmail () {
- 	var firstName = $("#firstNameInput").val();
- 	var lastName = $("#lastNameInput").val();
- 	var email = $("#emailInput").val();
- 	var message = $("#message").val();
- 	if (firstName && lastName && isValidEmailAddress(email)){
- 		$.ajax({
- 			type:"POST",
- 			url: url + "join",
- 			data:{
- 				firstName: firstName,
- 				lastName: lastName,
- 				message: message,
- 				email: email 
- 			},
- 			success: function (data) { 
- 				alert("Success");
- 			},
- 			error: function(error){
- 				var code = error.status;
- 				switch (code) {
- 					case 500:
- 						alert("Something went wrong!");
- 						break;
- 					case 400:
- 						alert("Bad Input!");
- 						break;
- 					case 409:
- 						alert("Email already on the list!");
- 					break;
- 					default:
- 						break;
- 				}
- 			}
- 		});
- 		$("#lastNameInput").val("");
- 		$("#firstNameInput").val("");
- 		$("#emailInput").val("");
- 		$("#message").val("");
- 	} else {
- 		alert("Please provide your first name, last name, and a valid e-mail address.");
- 	}
- }
-function isValidEmailAddress(emailAddress) {
-    var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-    return pattern.test(emailAddress);
-};
-
-
